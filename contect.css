@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing:border-box;
+
+    }
+
+  body{
+     font-family: montserrat;
+     }
+  nav{
+  background: white;
+  height: 80px;
+  width: 100%;
+  }
+  
+  .image
+  {
+  margin-left: 50px;
+  margin-top: 12px;
+  line-height: -8px;
+  margin-top: 5px;
+  }
+  
+  .image2{
+   margin-left: .35%;
+  line-height: -16%;
+  margin-bottom: 1.5%;
+  
+  }
+  
+  nav ul{
+    float: right;
+    }
+  
+  .bar{
+    float: right;
+    margin-top: -45px;
+    margin-right: 10px;
+    display: none;
+  }
+  
+  .fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 30px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    }
+  
+    nav ul li a{
+    color: black;
+    font-size: 17px;
+    border-radius: 30px;
+    padding: 10px 13px;
+    }
+  
+  
+    a.active, a:hover{
+    background: #1b9bff;
+     }
+    
+    @media screen and (min-width: 574px) and (max-width: 960px)
+  {
+    nav .menu-bar {
+      display: none;
+    }
+  
+    .bar{
+      display: flex;
+    }
+  
+    .image{
+     width: 120px;
+     margin-left: 10px;
+    }
+    .image2{
+      width: 350px;
+      margin-bottom: 17px;
+      margin-left: -10px;
+    }
+  }
+  
+  @media screen and (max-width: 573px){
+    nav .menu-bar{
+      display: none;
+    }
+  
+    .menu-bar{
+      width: none;
+    }
+  
+    /* .bar:hover .menu-bar{
+        display: flex;
+      } */
+    
+  
+    .bar{
+      display: flex;
+      margin-top: -35px;
+    }
+    .fa-solid, .fas {
+      font-size: 20px;
+    }
+    .image{
+     width: 70px;
+     margin-top: 10px;
+     margin-left: 10px;
+    }
+    .image2{
+      width: 230px;
+      margin-bottom: 10px;
+      margin-left: -10px;
+    }
+
+    nav{
+      /*     background:aqua; */
+           height: 60px
+        }
+  }
+  
+       .hero{
+       width: 100%;
+       height:100vh;
+       background-image: url(image/trad.jpg);
+       background-position: center;
+       background-size: cover;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       }
+
+       form{
+       width: 90%;
+       max-width:600px;
+       
+       }
+
+       .input-groups{
+       margin-bottom: 30px;
+       position: relative;
+       }
+
+     input,textarea{
+       width: 100%;
+       padding: 15px;
+       outline:0;
+       border: 1px solid rgb(106, 4, 240);
+       color: rgb(10, 10, 0);
+       background: white;
+       font-size: 15px;
+       }
+
+      label{
+      height: 100%;
+      position: absolute;
+      left:0;
+      top: 0;
+      padding: 15px;
+      color: rgb(76, 71, 71);
+      cursor: text;
+      /* align: center; */
+      }
+
+      button{
+      padding:10px 0;
+      color: #fff;
+      outline: none;
+      background: transparent;
+      border: 1px solid #fff;
+      width: 100%;
+      cursor: pointer;
+      }
+     
+      input:focus~label,
+      input:valid~label,
+      textarea:focus~label,
+      textarea:valid~label{
+       /* top: -34px; */
+       color: transparent;
+       /* border: 2px solid red; */
+      }
+      
+      input:focus~div{
+        border: 2px solid red;
+      }
+      .row{
+       display: flex;
+       align-items: center;
+       justify-content:space-between;
+      }
+
+      .row .input-groups{
+       flex-basis: 48%;
+      }
